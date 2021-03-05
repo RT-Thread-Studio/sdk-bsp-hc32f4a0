@@ -1,0 +1,97 @@
+board:
+  buy_url_cn: https://www.hdsc.com.cn
+  buy_url_global: N/A
+  debug_interface: SWD
+  debugger: J-Link
+  description_en: N/A
+  description_zh: EV_F4A0_LQ176 是 HDSC 官方推出的开发板，搭载 HC32F4A0SITB 芯片，基于 ARM Cortex-M4
+    内核，最高主频 240 MHz，具有丰富的板载资源，可以充分发挥 HC32F4A0SITB 的芯片性能
+  emulator_machine: ''
+  large_image: documents/images/board.jpg
+  name: HC32F4A0SITB-HDSC-EV_F4A0_LQ176
+  price_cn: N/A CNY
+  price_global: N/A USD
+  sale_contact_cn: https://www.hdsc.com.cn
+  sale_contact_global: N/A
+  small_image: documents/images/board_small.png
+  vendor: HDSC
+  version: 1.0.0
+chip:
+  chip_name: HC32F4A0SITB
+  clock_source: HSE
+  device_vendor: ''
+  family_name: HC32F4A0SITB
+  rx_name: PA10
+  series_name: HC32F4
+  source_freq: '8000000'
+  sub_series_name: HC32F4A0
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs: []
+example_projects: []
+features:
+- MCU：HC32F4A0SITB，Frequence 240MHz，2048KB FLASH ，512KB RAM
+- 'External RAM: IS62WV51216(SRAM,512KB) IS42S16400J(SDRAM,1MB)'
+- 'External FLASH: MT29F2G08AB(Nand,256MB) W25Q64(SPI,64M)'
+features_zh:
+- MCU：HC32F4A0SITB，主频 240MHz，2048KB FLASH ，512KB RAM
+- 外部 RAM：IS62WV51216(SRAM,512KB) IS42S16400J(SDRAM,1MB)
+- '外部 FLASH: MT29F2G08AB(Nand,256MB) W25Q64(SPI,64M)'
+pkg_type: Board_Support_Packages
+pkg_vendor: RT-Thread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - drivers
+    - figures
+    - Kconfig
+    - Libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvoptx
+    - project.uvprojx
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig.pyc
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvoptx
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: hc32f4a0
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
